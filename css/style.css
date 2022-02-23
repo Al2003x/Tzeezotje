@@ -66,6 +66,7 @@ ul {
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -126,7 +127,7 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 55px;
+  padding-top: 57px;
 }
 
 .header__logo {
@@ -192,19 +193,20 @@ img {
 }
 
 .hero {
-  padding-top: 154px;
-  padding-bottom: 377px;
+  padding-top: 155px;
+  padding-bottom: 265px;
   background-image: url("../assets/img/hero-bg.jpg");
-  background-position: center -110px;
+  background-position: center -109px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .hero__open {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   font-family: "PoppinsMedium";
   font-size: 24px;
   line-height: 32px;
+  letter-spacing: 1.44px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -253,6 +255,190 @@ img {
   background-color: #3a4574;
 }
 
+.menu {
+  padding-top: 80px;
+  padding-bottom: 156px;
+  background-color: #ffffff;
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: -30px;
+}
+
+.menu__list {
+  margin-right: 125px;
+}
+
+.menu__item {
+  margin-bottom: 40px;
+}
+
+.menu__item-data {
+  margin-bottom: 9px;
+  font-family: "PoppinsSemiBold";
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.menu__item-desc {
+  margin-right: 9px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.menu__item-dots {
+  display: inline-block;
+  margin-right: 39px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #D3B47F;
+  box-shadow: 15px 0 0 0 #D3B47F,
+  34px 0 0 #D3B47F;
+}
+
+.menu__images {
+  position: relative;
+  width: 475px;
+  height: 505px;
+  margin-top: 30px;
+  border: 2px solid #D3B47F
+}
+
+.menu__img {
+  position: absolute;
+  width: 323px;
+  height: 486px;
+}
+
+.menu__img:nth-child(1) {
+  top: 101px;
+  left: -97px;
+}
+
+.menu__img:nth-child(2) {
+  bottom: 67px;
+  right: -97px;
+}
+
+.reviews {
+  padding: 220px 0;
+  background-color: #3A4574;
+}
+
+.reviews__quote {
+  display: flex;
+  flex-direction: column;
+  width: 785px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.reviews__quotemark {
+  width: 83px;
+  height: 58px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  background-image: url("../assets/img/quotes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+  font-family: "PoppinsSemiBold";
+  font-size: 36px;
+  line-height: 40px;
+  color: #D3B47F;
+}
+
+.reviews__desc {
+  margin-bottom: 30px;
+  line-height: 40px;
+  color: #ffffff
+}
+
+.reviews__author {
+  font-family: "PoppinsSemiBold";
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 6px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: transparent;
+  border: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #ffffff;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: #D3B47F;
+}
+
+.promotion {
+  padding-top: 109px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+.promotion .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.promotion__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.promotion__content {
+  position: relative;
+  margin-right: 30px;
+}
+
+.promotion__content::after {
+  position: absolute;
+  content: "";
+  top: 93px;
+  left: -55px;
+  width: 108px;
+  height: 2px;
+  background-color: #D3B47F;
+}
+
+.promotion__content.promotion__content-reverse {
+  margin-left: 30px;
+}
+
+.promotion__title {
+  margin-bottom: 23px;
+  font-family: "PoppinsBold";
+  font-size: 40px;
+  line-height: 88px;
+  color: #000000
+}
+
+.promotion__text {
+  line-height: 32px;
+  color: #808080;
+}
 
 
 

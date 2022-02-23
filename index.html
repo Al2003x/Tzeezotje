@@ -28,6 +28,7 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -65,7 +66,7 @@
 
     <main>
       <h1 class="visually-hidden">Главная страница</h1>
-      <div class="hero">
+      <section class="hero">
         <div class="container">
           <p class="hero__open">OPEN EVERYDAY 6AM - 9PM</p>
           <h2 class="hero__title">
@@ -91,11 +92,132 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="menu">
+        <div class="container">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <p class="menu__item-data">Woensdag 12/01</p>
+              <span class="menu__item-desc">Salade met Serrano</span>
+              <span class="menu__item-dots"></span>
+              <span class="menu__item-desc">Steak Tartaar</span>
+            </li>
+            <li class="menu__item">
+              <p class="menu__item-data">Donderdag 13/01</p>
+              <span class="menu__item-desc">Toast Roquefort</span>
+              <span class="menu__item-dots"></span>
+              <span class="menu__item-desc">Penne met Kip en Prei</span>
+            </li>
+            <li class="menu__item">
+              <p class="menu__item-data">Vrijdag 14/01</p>
+              <span class="menu__item-desc">Verrassing van de Chef</span>
+              <span class="menu__item-dots"></span>
+              <span class="menu__item-desc">Penne met Kip en Prei</span>
+            </li>
+            <li class="menu__item">
+              <p class="menu__item-data">Vrijdag 15/01</p>
+              <span class="menu__item-desc">Verrassing van de Chef</span>
+              <span class="menu__item-dots"></span>
+              <span class="menu__item-desc">Penne met Kip en Prei</span>
+            </li>
+            <li class="menu__item">
+              <p class="menu__item-data">Vrijdag 16/01</p>
+              <span class="menu__item-desc">Verrassing van de Chef</span>
+              <span class="menu__item-dots"></span>
+              <span class="menu__item-desc">Penne met Kip en Prei</span>
+            </li>
+          </ul>
+          <div class="menu__images">
+            <img src="./assets/img/img-1.jpg" alt="img-1" class="menu__img" />
+            <img src="./assets/img/img-2.jpg" alt="img-2" class="menu__img" />
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews__quote">
+                  <div class="reviews__quotemark"></div>
+                  <h3 class="reviews__title">
+                    Goede service, lekker eten, toffe ambiance
+                  </h3>
+                  <p class="reviews__desc">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                  </p>
+                  <p class="reviews__author">ALAIN HEYNDRICKX</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__quote">
+                  <div class="reviews__quotemark"></div>
+                  <h3 class="reviews__title">
+                    Goede service, lekker eten, toffe ambiance
+                  </h3>
+                  <p class="reviews__desc">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                  </p>
+                  <p class="reviews__author">ALEX HEYND</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__quote">
+                  <div class="reviews__quotemark"></div>
+                  <h3 class="reviews__title">
+                    Goede service, lekker eten, toffe ambiance
+                  </h3>
+                  <p class="reviews__desc">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                  </p>
+                  <p class="reviews__author">BEN DRICK</p>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-button-next"></button>
+            <button class="swiper-button-prev"></button>
+          </div>
+        </div>
+      </section>
+      <section class="promotion">
+        <div class="container">
+          <div class="promotion__item">
+            <div class="promotion__content">
+              <h3 class="promotion__title">LEKKER ETEN</h3>
+              <p class="promotion__text">Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen. Dat is onze filosofie, goed eten in een goede sfeer.</p>
+            </div>
+            <img src="./assets/img/img-3.jpg" alt="img-3" class="promotion__img">
+          </div>
+          <div class="promotion__item">
+            <img src="./assets/img/img-4.jpg" alt="img-4" class="promotion__img">
+            <div class="promotion__content promotion__content-reverse">
+              <h3 class="promotion__title">TOFFE AMBIANCE</h3>
+              <p class="promotion__text">Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om te zorgen dat alle elementen bijdragen aan de juiste setting.</p>
+            </div>
+          </div>
+          <div class="promotion__item">
+            <div class="promotion__content">
+              <h3 class="promotion__title">LEKKERE COCKTAILS</h3>
+              <p class="promotion__text">Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke cocktail, een goed gesprek en lekker eten.</p>
+            </div>
+            <img src="./assets/img/img-5.jpg" alt="img-5" class="promotion__img">
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer"></footer>
 
-    <script src="index.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
