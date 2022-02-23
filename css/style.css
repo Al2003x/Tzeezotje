@@ -40,8 +40,11 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: "PoppinsRegular", "Arial", sans-serif;
@@ -53,6 +56,19 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -72,4 +88,174 @@ img {
   border: 0;
   clip-path: inset(100%);
 }
+
+.btn {
+  display: inline-block;
+  padding: 38px 65px;
+  font-family: "PoppinsMedium";
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #3a4574;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color:darkblue;
+  color: #808080
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 375px;
+  padding-right: 360px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("../assets/img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 55px;
+}
+
+.header__logo {
+  margin-right: 133px;
+}
+
+.header__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__logo-img {
+  width: 270px;
+  height: 55px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__item {
+  margin-right: 45px;
+}
+
+.nav__link {
+  display: block;
+  font-family: "PoppinsRegular";
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.nav__link.nav__link--medium {
+  font-family: "PoppinsMedium";
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.header__tel {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  text-align: center;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.header__tel::after {
+  position: absolute;
+  content: "";
+  left: -33px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/img/call-calling.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  padding-top: 154px;
+  padding-bottom: 377px;
+  background-image: url("../assets/img/hero-bg.jpg");
+  background-position: center -110px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__open {
+  margin-bottom: 24px;
+  font-family: "PoppinsMedium";
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+  font-family: "PoppinsBold";
+  font-size: 64px;
+  line-height: 88px;
+  color: #ffffff;
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero__social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 25px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.hero__social-item:last-child {
+  margin-right: 0;
+}
+
+.hero__social-link {
+  color: #ffffff
+}
+
+.hero__social-item:hover {
+  background-color: #3a4574;
+}
+
+
+
+
+
+
 
